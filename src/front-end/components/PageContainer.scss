@@ -1,0 +1,12 @@
+.page-container {
+  height: 100%;
+  background-color: teal;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .title {
+    color: #222222;
+    text-align: center;
+  }
+}

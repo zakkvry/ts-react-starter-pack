@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap");
+
+:global {
+  body {
+    background-color: floralwhite;
+    font-family: "Ubuntu Mono", monospace;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.app-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px;
+
+    .app-brand {
+      text-decoration: none;
+    }
+
+    .app-nav {
+      > ul {
+        text-decoration: none;
+
+        > li {
+          display: inline-block;
+          padding: 5px 10px;
+          color: purple;
+
+          .activeLink {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .app-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: yellow;
+    padding: 10px;
+  }
+}
